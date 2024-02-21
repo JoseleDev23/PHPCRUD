@@ -17,7 +17,7 @@ $registro = mysqli_fetch_row($registros);
         <div class="col text-center">
             <div class="card">
                 <div class="card-header display-6">
-                    Actualiza el Producto
+                    Actualiza el ProductoS
                 </div>
             </div>
             <div class="row mt-3 justify-content-md-center">
