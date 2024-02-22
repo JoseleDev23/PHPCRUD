@@ -8,6 +8,11 @@
 </head>
 
 <body>
+<?php
+
+include "gestorCrud/header.php";
+
+?>
     <form action='login.php' method='post'>
         <fieldset>
             <legend>Login</legend>
@@ -31,7 +36,11 @@
             </div>
         </fieldset>
     </form>
+    <?php
 
+include "gestorCrud/footer.php";
+
+?>
 </body>
 
 </html>
