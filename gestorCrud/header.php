@@ -1,6 +1,3 @@
-<!doctype html>
-<html lang="es">
-
 <head>
     <title>Sistema CRUD de inventario de productos</title>
     <meta charset="utf-8" />
