@@ -1,7 +1,5 @@
 <?php
-
 include "header.php";
-
 ?>
 <div class="container mt-5">
     <div class="row justify-content-center">
@@ -17,7 +15,5 @@ include "header.php";
 </div>
 
 <?php
-
 include "footer.php";
-
 ?>
