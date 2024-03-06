@@ -38,9 +38,7 @@
 
 <body>
     <?php
-
     include "header.php";
-
     ?>
     <div class="container-fluid">
         <div class="row">
@@ -71,7 +69,10 @@
                                 <input type='password' name='inputPassword' id='password' maxlength="50" />
                             </div>
                             <button type="submit" class="btn btn-primary">
-                                Enviar
+                                Entrar
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                Registrarse
                             </button>
                         </form>
                     </div>
