@@ -28,7 +28,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">Identificador</th>
-                                                        <th scope="col">Titulo</th>
+                                                        <th scope="col">Título</th>
                                                         <th scope="col">Autor</th>
                                                         <th scope="col">Género</th>
                                                         <th scope="col">Año de publicación</th>
