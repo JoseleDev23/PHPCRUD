@@ -3,8 +3,8 @@
         <div class="container p-4 pb-0">
             <p class="d-flex justify-content-center align-items-center">
                 <span class="me-3">¡Échale un ojo al GitHub!</span>
-                <a class="nav-link" href="https://github.com/Yodel23/PHPCRUD">
-                    <img src="img/git.png" width="50px" height="50px" />
+                <a class="nav-link" href="https://github.com/Yodel23/PHPCRUD" target="_blank">
+                    <img src="../img/git.png" width="50px" height="50px" />
                 </a>
             </p>
         </div>

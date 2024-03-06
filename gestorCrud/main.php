@@ -6,7 +6,7 @@ if (!isset($_SESSION)) {
 
 // Y comprobamos que el usuario se haya autentificado
 if (!isset($_SESSION['usuario'])) {
-    die("Error - debe <a href='index.php'>identificarse</a>.<br />");
+    die("Error - debe <a href='indexExterno.php'>identificarse</a>.<br />");
 }
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ if (!isset($_SESSION['usuario'])) {
 <body>
     <h1>Bienvenido <?= $_SESSION['usuario'] ?></h1>
     <p>Pulse <a href="logout.php">aquí</a> para salir</p>
-    <p>Volver al <a href="index.php">inicio</a></p>
+    <p>Volver al <a href="indexExterno.php">inicio</a></p>
     <h2>Listado de productos</h2>
     <ul>
         <li>Producto 1</li>
