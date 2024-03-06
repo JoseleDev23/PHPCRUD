@@ -8,11 +8,10 @@
 </head>
 
 <body>
-<div style="background: url(img/libreria.jpg)" class="jumbotron bg-cover text-white">
+<div style="background: url(../img/libreria.jpg)" class="jumbotron bg-cover text-white">
     <div class="container py-5 text-center">
         <h1 class="display-4 font-weight-bold">Sistema gestor de libros</h1>
         <p class="font-italic mb-0">Organiza tu biblioteca personal, busca títulos, añade notas y etiquetas, y sincroniza tu colección en todos tus dispositivos.</p>
-        </p>
     </div>
 </div>
 </body>

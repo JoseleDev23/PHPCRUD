@@ -39,7 +39,7 @@
 <body>
     <?php
 
-    include "gestorCrud/header.php";
+    include "header.php";
 
     ?>
     <div class="container-fluid">
@@ -81,7 +81,7 @@
     </div>
     <?php
 
-    include "gestorCrud/footer.php";
+    include "footer.php";
 
     ?>
 </body>
