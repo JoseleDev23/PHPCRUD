@@ -1,24 +1,36 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="estilos.css">
-<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acpetar Cookies</title>
 </head>
 
 <body>
-	<h1>Creación de cookie</h1>
 	<?php
-	
-	if(!isset($_COOKIE['created_cookie'])){
-		$expiration= time() + (60*60*24*365);
-		setcookie('created_cookie', 1, $expiration);
-        print("Cookie creada satisfactoriamente.");
-	} else {
-        print("La cookie ya fue creada .");
-	}
-	
+
+	include "gestorCrud/header.php";
+
 	?>
-		</br><a href="index.php">Volver al menú</a>
+	<h1>Creación de cookies</h1>
+	<?php
+
+	if (!isset($_COOKIE['created_cookie'])) {
+		$expiration = time() + (60 * 60 * 24 * 365);
+		setcookie('gustosLectura', 1, $expiration);
+		print("Cookie creada satisfactoriamente.");
+	} else {
+		print("La cookie ya fue creada .");
+	}
+
+	?>
+	</br><a href="gestorCrud/index.php">Iniciar sesión</a>
+	<?php
+
+	include "gestorCrud/footer.php";
+
+	?>
 </body>
+
 </html>
