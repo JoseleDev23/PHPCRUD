@@ -1,8 +1,6 @@
                 <?php
-
                 include "conexion.php";
                 include "header.php";
-
                 ?>
 
                 <div class="container my-5 ">
@@ -10,19 +8,19 @@
                         <div class="col text-center">
                             <div class="card">
                                 <div class="card-header display-6">
-                                    Listado de Productos
+                                    Listado de libros
                                 </div>
                             </div>
                             <div class="row mt-3 justify-content-md-center">
                                 <div class="col-md-10">
                                     <div class="card">
                                         <div class="card-header">
-                                            Productos:
+                                            Libros
                                         </div>
 
                                         <?php
-                                        mysqli_select_db($conexion, "productosbd");
-                                        $consultar = "SELECT * FROM productos";
+                                        mysqli_select_db($conexion, "bibliotecaphp");
+                                        $consultar = "SELECT * FROM libros";
                                         $registros = mysqli_query($conexion, $consultar);
                                         ?>
                                         <div class="table-responsive">
@@ -30,10 +28,11 @@
                                                 <thead>
                                                     <tr>
                                                         <th scope="col">Identificador</th>
-                                                        <th scope="col">Nombre</th>
-                                                        <th scope="col">Descripcion</th>
-                                                        <th scope="col">Precio</th>
-                                                        <th scope="col">Imagen</th>
+                                                        <th scope="col">Titulo</th>
+                                                        <th scope="col">Autor</th>
+                                                        <th scope="col">Género</th>
+                                                        <th scope="col">Año de publicación</th>
+                                                        <th scope="col">Disponibilidad</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -45,7 +44,8 @@
                                                             <td><?php echo $registro[1]; ?></td>
                                                             <td><?php echo $registro[2]; ?></td>
                                                             <td><?php echo $registro[3]; ?></td>
-                                                            <td><?php echo '<img  width = "100px" height = "100px"  src="img/' . $registro[4] . '";>' ?> </td>
+                                                            <td><?php echo $registro[4]; ?></td>
+                                                            <td><?php echo $registro[5]; ?></td>
                                                         </tr>
                                                     <?php
                                                     }
@@ -64,7 +64,5 @@
                 </div>
 
                 <?php
-
                 include "footer.php";
-
                 ?>
