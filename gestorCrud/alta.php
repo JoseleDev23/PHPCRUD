@@ -9,40 +9,35 @@ include "header.php";
         <div class="col text-center">
             <div class="card">
                 <div class="card-header display-6">
-                    Alta de Producto
+                    Añadir libro
                 </div>
             </div>
             <div class="row mt-3 justify-content-md-center">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            Ingresar Datos
+                            Ingresar datos
                         </div>
                         <form class="p-4" method="POST" action="registrar.php" enctype="multipart/form-data">
-
                             <div class="mb-3">
-                                <label for="" class="form-label">Identificador</label>
-                                <input type="number" class="form-control" name="identificador" id="identificador" autofocus required aria-describedby="helpId" />
-                                <!-- <small id="helpId" class="form-text text-muted">Help text</small> -->
+                                <label for="" class="form-label">Título</label>
+                                <input type="text" class="form-control" name="titulo" id="titulo" required />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" name="nombre" id="nombre" required />
+                                <label for="" class="form-label">Autor</label>
+                                <input type="text" class="form-control" name="autor" id="autor" required />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Descripción</label>
-                                <textarea class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
+                                <label for="" class="form-label">Género</label>
+                                <input type="text" class="form-control" name="genero" id="genero" required />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Precio</label>
-                                <input type="number" class="form-control" name="precio" id="precio" required />
+                                <label for="" class="form-label">Año de publicación</label>
+                                <input type="number" class="form-control" name="anno" id="anno" required />
                             </div>
-                            <div class="mb-3">
-                                <label for="" class="form-label">Imagen</label>
-                                <input type="file" class="form-control" name="imagen" id="imagen" accept="image/*" required />
-                            </div>
+                            <input type="hidden" name="disponibilidad" id="disponibilidad" value="disponible">
                             <div class="d-grid">
-                                <input type="submit" class="btn btn-primary" value="Dar de alta">
+                                <input type="submit" class="btn btn-primary" value="Añadir">
                             </div>
                         </form>
                     </div>
