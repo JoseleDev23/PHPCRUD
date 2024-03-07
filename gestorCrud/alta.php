@@ -47,7 +47,7 @@ include "header.php";
                         </form>
                     </div>
                 </div>
-                <a href="index.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                <a href="menu.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
             </div>
         </div>
     </div>

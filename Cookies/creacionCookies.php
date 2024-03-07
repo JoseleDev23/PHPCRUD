@@ -4,8 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aceptar Cookies</title>
-	<!-- Agrega el enlace al archivo de estilos de Bootstrap -->
+	<title>Aceptar cookies</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -24,7 +23,7 @@
 			echo '</form>';
 		} else {
 			echo "<p>La cookie ya fue creada.</p>";
-			echo '<form action="../gestorCrud/index.php" method="post">';
+			echo '<form action="../gestorCrud/menu.php" method="post">';
 			echo '<input type="submit" class="btn btn-primary" name="continuarConElMenu" value="Cookies Creadas">';
 			echo '</form>';
 		}
@@ -38,8 +37,6 @@
 	</div>
 
 	<?php include "../gestorCrud/footer.php"; ?>
-
-	<!-- Agrega el enlace al archivo de scripts de Bootstrap y jQuery al final del cuerpo del documento -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
