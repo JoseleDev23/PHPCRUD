@@ -1,9 +1,30 @@
 <?php
+include "conexion.php";
+// Recuperamos la información de la sesión
+if (!isset($_SESSION)) {
+    session_start();
+}
 
-include "header.php";
-
+// Y comprobamos que el usuario se haya autentificado
+if (!isset($_SESSION['usuario'])) {
+    die("Error - debe <a href='index.php'>identificarse</a>.<br />");
+}
 ?>
-
+<?php
+include "header.php";
+?>
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col text-start text-secondary">
+            Usuario:  echo $_SESSION['usuario'];
+        </div>
+        <div class="col text-end">
+            <form action="logout.php" method="post">
+                <button type="submit" class="btn btn-danger">Cerrar Sesión</button>
+            </form>
+        </div>
+    </div>
+</div> -->
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
