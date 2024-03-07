@@ -35,7 +35,7 @@ include "header.php";
                                         </a>
                                     </td>
                                     <td scope="row">
-                                        <a href="actualiza.php">
+                                        <a href="actualizarUsuario.php">
                                             <img src="../img/userUpdate.png" width="100px" height="100px">
                                         </a>
                                     </td>

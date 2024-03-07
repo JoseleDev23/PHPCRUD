@@ -22,7 +22,7 @@ include "header.php";
 
                         <?php
                         mysqli_select_db($conexion, "bibliotecaphp");
-                        $consultar = "SELECT * FROM libros";
+                        $consultar = "SELECT * FROM usuarios";
                         $registros = mysqli_query($conexion, $consultar);
                         ?>
                         <div class="table-responsive">
@@ -30,11 +30,13 @@ include "header.php";
                                 <thead>
                                     <tr>
                                         <th scope="col">Identificador</th>
-                                        <th scope="col">Título</th>
-                                        <th scope="col">Autor</th>
-                                        <th scope="col">Género</th>
-                                        <th scope="col">Año de publicación</th>
-                                        <th scope="col">Disponibilidad</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Correo electrónico</th>
+                                        <th scope="col">Contraseña</th>
+                                        <th scope="col">DNI</th>
+                                        <th scope="col">Edad</th>
+                                        <th scope="col">Dirección</th>
+                                        <th scope="col">Rol</th>
                                         <th scope="col">Acción</th>
                                     </tr>
                                 </thead>
@@ -49,7 +51,9 @@ include "header.php";
                                             <td><?php echo $registro[3]; ?></td>
                                             <td><?php echo $registro[4]; ?></td>
                                             <td><?php echo $registro[5]; ?></td>
-                                            <td><a href="actualiza2.php? id= <?php echo $registro[0]; ?>"> <i class="bi-pencil px-1" style="font-size: 2em;color:green;"></i></a></td>
+                                            <td><?php echo $registro[6]; ?></td>
+                                            <td><?php echo $registro[7]; ?></td>
+                                            <td><a href="actualizarUsuario2.php? id= <?php echo $registro[0]; ?>"> <i class="bi-pencil px-1" style="font-size: 2em;color:green;"></i></a></td>
                                         </tr>
                                     <?php
                                     }
@@ -60,7 +64,7 @@ include "header.php";
 
                     </div>
                 </div>
-                <a href="menu.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                <a href="menuGestionUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
             </div>
         </div>
     </div>
