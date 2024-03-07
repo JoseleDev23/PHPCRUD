@@ -1,19 +1,31 @@
 <?php
-if (isset($_POST['enviar'])) {
+session_start();
+
+include "conexion.php";
+
+if (isset($_POST['inputUsuario'])) {
     $usuario = $_POST['inputUsuario'];
     $password = $_POST['inputPassword'];
 
     if (empty($usuario) || empty($password)) {
         $error = "Debes introducir un usuario y contraseña";
-        include "index.php";
     } else {
-        if ($usuario == "admin" && $password == "admin") {
-            session_start();
-            $_SESSION['usuario'] = $usuario;
-            include "main.php";
+        mysqli_select_db($conexion, "bibliotecaphp");
+        $query = "SELECT * FROM usuarios WHERE nombre = '$usuario' AND contrasena = '$password'";
+        $result = mysqli_query($conexion, $query);
+
+        if ($result) {
+            if (mysqli_num_rows($result) > 0) {
+                $_SESSION['usuario'] = $usuario;
+                header("Location: menu.php");
+                exit();
+            } else {
+                $error = "Usuario o contraseña no válidos!";
+            }
         } else {
-            $error = "Usuario o contraseña no válidos!";
-            include "index.php";
+            $error = "Error en la consulta: " . mysqli_error($conexion);
         }
     }
 }
+
+include "index.php";
