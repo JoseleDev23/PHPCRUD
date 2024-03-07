@@ -5,7 +5,7 @@ if (isset($_POST['enviar'])) {
 
     if (empty($usuario) || empty($password)) {
         $error = "Debes introducir un usuario y contraseña";
-        include "indexExterno.php";
+        include "index.php";
     } else {
         if ($usuario == "admin" && $password == "admin") {
             session_start();
@@ -13,7 +13,7 @@ if (isset($_POST['enviar'])) {
             include "main.php";
         } else {
             $error = "Usuario o contraseña no válidos!";
-            include "indexExterno.php";
+            include "index.php";
         }
     }
 }

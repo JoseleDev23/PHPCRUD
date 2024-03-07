@@ -1,46 +1,90 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
-include "header.php";
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autentificacion de usuarios</title>
+    <style>
+        html {
+            background-color: #e2e2e2;
+        }
 
-?>
+        form {
+            max-width: 20%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
 
-<div class="container my-5 ">
-    <div class="row">
-        <div class="col text-center">
-            <div class="card">
-                <div class="card-header display-6">
-                    Acciones sobre BD
-                </div>
-                <div class="p-4">
-                    <div class="table-responsive">
-                        <table class="table table-primary">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Alta de producto</th>
-                                    <th scope="col">Baja de producto</th>
-                                    <th scope="col">Actualizacion de producto</th>
-                                    <th scope="col">Listado de producto</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="">
-                                    <td scope="row"><a href="alta.php"><i class="bi-database-add px-3" style="font-size: 4rem; color: orange;"></i></a></td>
-                                    <td scope="row"><a href="baja.php"><i class="bi-database-dash px-3" style="font-size: 4rem; color: orange;"></i></a></td>
-                                    <td scope="row"><a href="actualiza.php"><i class="bi-database-check px-3" style="font-size: 4rem; color: orange;"></i></a></td>
-                                    <td scope="row"><a href="listado.php"><i class="bi-database-down px-3" style="font-size: 4rem; color: orange;"></i></a></td>
-                                </tr>
-                            </tbody>
-                        </table>
+        form label {
+            display: block;
+            width: 80%;
+            margin: 0.2rem auto;
+        }
+
+        form button {
+            margin: .5em 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <?php
+    include "header.php";
+    ?>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 pt-3" style="background-color: #e2e2e2;">
+                        <form role="form" action='login.php' method='post'>
+                            <div class="form-group">
+                                <legend>Login</legend>
+                                <div>
+                                    <span class='error'>
+                                        <?php
+                                        if (isset($error)) {
+                                            echo $error;
+                                        }
+                                        ?>
+                                    </span>
+                                </div>
+                                <label for="usuario">
+                                    Usuario:
+                                </label>
+                                <input type='text' name='inputUsuario' id='usuario' maxlength="50" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">
+                                    Contraseña:
+                                </label>
+                                <input type='password' name='inputPassword' id='password' maxlength="50" />
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Entrar
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                Registrarse
+                            </button>
+                        </form>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <?php
 
-<?php
+    include "footer.php";
 
-include "footer.php";
+    ?>
+</body>
 
-?>
+</html>

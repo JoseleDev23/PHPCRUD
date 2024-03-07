@@ -6,6 +6,6 @@ if (isset($_POST['aceptarCookies'])) {
     setcookie('created_cookie', 1, $expiration);
 
     // Redirige al usuario al index.php
-    header('Location: ../gestorCrud/index.php');
+    header('Location: ../gestorCrud/menu.php');
     exit();
 }
