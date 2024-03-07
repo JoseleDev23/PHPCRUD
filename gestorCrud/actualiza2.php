@@ -24,7 +24,7 @@ $registro = mysqli_fetch_row($registros);
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            Ingresar Datos
+                            Ingresar datos
                         </div>
                         <form class="p-4" method="POST" action="actualizar.php" enctype="multipart/form-data">
                             <div class="mb-3">
