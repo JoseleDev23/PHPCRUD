@@ -17,7 +17,7 @@ if (isset($_POST['inputUsuario'])) {
         if ($result) {
             if (mysqli_num_rows($result) > 0) {
                 $_SESSION['usuario'] = $usuario;
-                header("Location: menu.php");
+                header("Location: menuPrincipalAdmin.php");
                 exit();
             } else {
                 $error = "Usuario o contraseña no válidos!";

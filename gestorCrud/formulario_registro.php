@@ -84,6 +84,13 @@
                                 </label>
                                 <input type='text' name='direccion' id='direccion' maxlength="255" />
                             </div>
+                            <div class="form-group">
+                                <label for="rol">Rol:</label>
+                                <select name="rol" id="rol" required>
+                                    <option value="usuario">Usuario</option>
+                                    <option value="administrador">Administrador</option>
+                                </select>
+                            </div>
                             <button type="submit" class="btn btn-primary">
                                 Registrarse
                             </button>
