@@ -1,6 +1,6 @@
 <?php
 
-include "conexion.php";
+include "../../conexion.php";
 include "header.php";
 
 mysqli_select_db($conexion, "bibliotecaphp");

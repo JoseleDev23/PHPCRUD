@@ -1,6 +1,5 @@
 <?php
 
-//Datos de conexión a MySQL
 $servidor = 'localhost';
 $usuario = 'root';
 $password = '';

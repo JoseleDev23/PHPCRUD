@@ -1,11 +1,9 @@
 <?php
-include "conexion.php";
-// Recuperamos la información de la sesión
+include "../../conexion.php";
 if (!isset($_SESSION)) {
     session_start();
 }
 
-// Y comprobamos que el usuario se haya autentificado
 if (!isset($_SESSION['usuario'])) {
     die("Error - debe <a href='index.php'>identificarse</a>.<br />");
 }
@@ -13,18 +11,6 @@ if (!isset($_SESSION['usuario'])) {
 <?php
 include "header.php";
 ?>
-<!-- <div class="container-fluid">
-    <div class="row">
-        <div class="col text-start text-secondary">
-            Usuario:  echo $_SESSION['usuario'];
-        </div>
-        <div class="col text-end">
-            <form action="logout.php" method="post">
-                <button type="submit" class="btn btn-danger">Cerrar Sesión</button>
-            </form>
-        </div>
-    </div>
-</div> -->
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
@@ -47,22 +33,22 @@ include "header.php";
                                 <tr class="">
                                     <td scope="row">
                                         <a href="alta.php">
-                                            <img src="../img/annadir.png" width="100px" height="100px">
+                                            <img src="../../../img/annadir.png" width="100px" height="100px">
                                         </a>
                                     </td>
                                     <td scope="row">
                                         <a href="baja.php">
-                                            <img src="../img/eliminar.png" width="100px" height="100px">
+                                            <img src="../../../img/eliminar.png" width="100px" height="100px">
                                         </a>
                                     </td>
                                     <td scope="row">
                                         <a href="actualiza.php">
-                                            <img src="../img/actualizar.png" width="100px" height="100px">
+                                            <img src="../../../img/actualizar.png" width="100px" height="100px">
                                         </a>
                                     </td>
                                     <td scope="row">
                                         <a href="listado.php">
-                                            <img src="../img/listado.png" width="100px" height="100px">
+                                            <img src="../../../img/listado.png" width="100px" height="100px">
                                         </a>
                                     </td>
                                 </tr>
