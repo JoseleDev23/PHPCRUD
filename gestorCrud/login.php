@@ -19,9 +19,9 @@ if (isset($_POST['inputUsuario'])) {
                 $usuarioData = mysqli_fetch_assoc($result);
                 $_SESSION['usuario'] = $usuario;
                 if ($usuarioData['rol'] == 'admin') {
-                    header("Location: menuPrincipalAdmin.php");
+                    header("Location: dashboardAdmin/menuPrincipalAdmin.php");
                 } else {
-                    header("Location: menuPrincipalUser.php");
+                    header("Location: dashboardUser/menuPrincipalUser.php");
                 }
                 exit();
             } else {

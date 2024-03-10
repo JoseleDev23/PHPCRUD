@@ -23,7 +23,7 @@ include "header.php";
                                 <tr class="">
                                     <td scope="row">
                                         <a href="menuUsuario.php">
-                                            <img src="../img/listado.png" width="100px" height="100px">
+                                            <img src="../../img/listado.png" width="100px" height="100px">
                                         </a>
                                     </td>
                                 </tr>

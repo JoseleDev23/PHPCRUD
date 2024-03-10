@@ -1,5 +1,5 @@
 <?php
-include "conexion.php";
+include "../conexion.php";
 
 if (!isset($_SESSION)) {
     session_start();
@@ -44,12 +44,12 @@ include "header.php";
                                 <tr class="">
                                     <td scope="row">
                                         <a href="actualiza.php">
-                                            <img src="../img/actualizar.png" alt="Actualizar libro" width="100px" height="100px">
+                                            <img src="../../img/actualizar.png" alt="Actualizar libro" width="100px" height="100px">
                                         </a>
                                     </td>
                                     <td scope="row">
                                         <a href="listadoLibrosUsuario.php">
-                                            <img src="../img/listado.png" alt="Listado de libros" width="100px" height="100px">
+                                            <img src="../../img/listado.png" alt="Listado de libros" width="100px" height="100px">
                                         </a>
                                     </td>
                                 </tr>
