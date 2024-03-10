@@ -20,7 +20,7 @@ include "header.php";
 
                         <?php
                         mysqli_select_db($conexion, "bibliotecaphp");
-                        $consultar = "SELECT * FROM libros";
+                        $consultar = "SELECT * FROM libros WHERE disponibilidad='Disponible'";
                         $registros = mysqli_query($conexion, $consultar);
                         ?>
                         <div class="table-responsive">
@@ -56,7 +56,7 @@ include "header.php";
 
                     </div>
                 </div>
-                <a href="menu.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                <a href="menuPrincipalUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
             </div>
         </div>
     </div>

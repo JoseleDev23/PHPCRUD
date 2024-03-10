@@ -88,7 +88,7 @@
                                 <label for="rol">Rol:</label>
                                 <select name="rol" id="rol" required>
                                     <option value="usuario">Usuario</option>
-                                    <option value="administrador">Administrador</option>
+                                    <option value="admin">Administrador</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-primary">
