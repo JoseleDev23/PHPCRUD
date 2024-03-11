@@ -36,8 +36,8 @@ include "header.php";
                         <table class="table" style="text-align:center">
                             <thead>
                                 <tr>
-                                    <th scope="col">Actualizar libro</th>
-                                    <th scope="col">Listado de libros</th>
+                                    <th scope="col">Pedir préstamo</th>
+                                    <th scope="col">Listado de libros disponibles</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -56,10 +56,6 @@ include "header.php";
                             </tbody>
                         </table>
                         <a href="menuPrincipalUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
-                    </div>
-                    <div class="text-end">
-                        <form action="../logout.php" method="post">
-                            <button type="submit" class="btn btn-sm btn-danger">Cerrar Sesión</button>
                     </div>
                 </div>
             </div>

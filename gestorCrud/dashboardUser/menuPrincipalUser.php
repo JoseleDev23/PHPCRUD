@@ -29,6 +29,11 @@ include "header.php";
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="text-end">
+                        <form action="../logout.php" method="post">
+                            <button type="submit" class="btn btn-sm btn-danger">Cerrar Sesión</button>
+                        </form>
+                    </div>
                     </div>
                 </div>
             </div>
