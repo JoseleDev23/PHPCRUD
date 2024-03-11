@@ -43,7 +43,7 @@ include "header.php";
                             <tbody>
                                 <tr class="">
                                     <td scope="row">
-                                        <a href="actualiza.php">
+                                        <a href="prestamo.php">
                                             <img src="../../img/actualizar.png" alt="Actualizar libro" width="100px" height="100px">
                                         </a>
                                     </td>

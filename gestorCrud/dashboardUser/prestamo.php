@@ -1,6 +1,8 @@
 <?php
+
 include "../conexion.php";
 include "header.php";
+
 ?>
 
 <div class="container my-5 ">
@@ -8,7 +10,7 @@ include "header.php";
         <div class="col text-center">
             <div class="card">
                 <div class="card-header display-6">
-                    Listado de libros
+                    Prestamo de libros
                 </div>
             </div>
             <div class="row mt-3 justify-content-md-center">
@@ -20,7 +22,7 @@ include "header.php";
 
                         <?php
                         mysqli_select_db($conexion, "bibliotecaphp");
-                        $consultar = "SELECT * FROM libros";
+                        $consultar = "SELECT * FROM libros WHERE disponibilidad='Disponible'";
                         $registros = mysqli_query($conexion, $consultar);
                         ?>
                         <div class="table-responsive">
@@ -33,6 +35,7 @@ include "header.php";
                                         <th scope="col">Género</th>
                                         <th scope="col">Año de publicación</th>
                                         <th scope="col">Disponibilidad</th>
+                                        <th scope="col">Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,6 +49,7 @@ include "header.php";
                                             <td><?php echo $registro[3]; ?></td>
                                             <td><?php echo $registro[4]; ?></td>
                                             <td><?php echo $registro[5]; ?></td>
+                                            <td><a href="actualizaPrestamo.php? id= <?php echo $registro[0]; ?>"> <i class="bi-pencil px-1" style="font-size: 2em;color:green;"></i></a></td>
                                         </tr>
                                     <?php
                                     }
@@ -56,7 +60,13 @@ include "header.php";
 
                     </div>
                 </div>
-                <a href="menuUsuario.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <button type="button" onclick="window.location.href='menu.php'" class="btn btn-secondary mt-3">
+                            Volver atrás
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -64,5 +74,7 @@ include "header.php";
 </div>
 
 <?php
+
 include "footer.php";
+
 ?>
