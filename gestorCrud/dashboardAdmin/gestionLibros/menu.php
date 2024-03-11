@@ -54,7 +54,9 @@ include "header.php";
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="menuPrincipalAdmin.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>    
+                        <button type="button" onclick="window.location.href='../menuPrincipalAdmin.php'" class="btn btn-secondary mt-3">
+                            Volver atrás
+                        </button>
                     </div>
                 </div>
             </div>

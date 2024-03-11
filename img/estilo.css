@@ -4,6 +4,7 @@ body {
 
 form {
     border-collapse: collapse;
+    max-width: fit-content;
     border-radius: 10px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
     background-color: white;
