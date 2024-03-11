@@ -9,7 +9,9 @@ include "header.php";
                     Libro eliminado con éxito
                 </div>
             </div>
-            <a href="menu.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+            <button type="button" onclick="window.location.href='menu.php'" class="btn btn-secondary mt-3">
+                Volver al menú
+            </button>
         </div>
     </div>
 </div>
