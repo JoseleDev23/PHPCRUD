@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-md-12 pt-3" style="background-color: #e2e2e2;">
                         <form role="form" method='post' action='login.php'>
-                            <div class="form-group">
+                            <div class="form-group p-3">
                                 <legend>Login</legend>
                                 <div>
                                     <span class='error'>
