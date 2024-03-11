@@ -26,34 +26,44 @@ $registro = mysqli_fetch_row($registros);
                         <div class="card-header">
                             Ingresar datos
                         </div>
-                        <form class="p-4" method="POST" action="actualizarLibro.php" enctype="multipart/form-data">
+                        <form class="p-4" method="POST" action="actualizaPrestamo.php" enctype="multipart/form-data">
                             <div class="mb-3">
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Título</label>
-                                    <?php echo $registro[1] ?>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="" class="form-label">Autor</label>
-                                    <?php echo $registro[2] ?>
-                                </div>
-                                <label for="disponibilidad" class="form-label">Disponibilidad</label>
-                                <select class="form-control" name="disponibilidad" id="disponibilidad">
-                                    <option value="disponible" <?php echo ($registro[5] == 'disponible') ? 'selected' : ''; ?>>Disponible</option>
-                                    <option value="prestado" <?php echo ($registro[5] == 'prestado') ? 'selected' : ''; ?>>Prestado</option>
-                                </select>
+                                <input type="hidden" name="id" value="<?php echo $registro[0] ?>">
                             </div>
-                            <button type="submit" class="btn btn-primary">
-                                Actualizar
-                            </button>
-                            <button type="button" onclick="window.location.href='menu.php'" class="btn btn-secondary">
-                                Volver atrás
-                            </button>
-                        </form>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Título</label>
+                                <?php echo $registro[1] ?>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Autor</label>
+                                <?php echo $registro[2] ?>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Género</label>
+                                <?php echo $registro[3] ?>
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label">Año de publicación</label>
+                                <?php echo $registro[4] ?>
+                            </div>
+                            <label for="disponibilidad" class="form-label">Disponibilidad</label>
+                            <select class="form-control" name="disponibilidad" id="disponibilidad">
+                                <option value="disponible" <?php echo ($registro[5] == 'disponible') ? 'selected' : ''; ?>>Disponible</option>
+                                <option value="prestado" <?php echo ($registro[5] == 'prestado') ? 'selected' : ''; ?>>Prestado</option>
+                            </select>
                     </div>
+                    <button type="submit" class="btn btn-primary">
+                        Actualizar
+                    </button>
+                    <button type="button" onclick="window.location.href='menu.php'" class="btn btn-secondary">
+                        Volver atrás
+                    </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </div>
 

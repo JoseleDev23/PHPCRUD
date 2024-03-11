@@ -62,7 +62,7 @@ include "header.php";
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-4 text-center">
-                        <button type="button" onclick="window.location.href='menu.php'" class="btn btn-secondary mt-3">
+                        <button type="button" onclick="window.location.href='menuUsuario.php'" class="btn btn-secondary mt-3">
                             Volver atrás
                         </button>
                     </div>
