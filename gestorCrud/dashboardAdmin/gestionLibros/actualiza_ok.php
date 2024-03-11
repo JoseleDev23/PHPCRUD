@@ -8,7 +8,7 @@ include "header.php";
         <div class="col text-center">
             <div class="card">
                 <div class="card-header display-6">
-                    Libro actualizado con éxito.
+                    Libro actualizado con éxito
                 </div>
             </div>
             <a href="menu.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>

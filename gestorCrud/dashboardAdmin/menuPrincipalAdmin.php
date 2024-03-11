@@ -1,5 +1,13 @@
 <?php
 
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+if (!isset($_SESSION['usuario'])) {
+    die("Error - debe <a href='index.php'>identificarse</a>.");
+}
+
 include "header.php";
 
 ?>
@@ -35,6 +43,9 @@ include "header.php";
                                 </tr>
                             </tbody>
                         </table>
+                        <button type="button" onclick="window.location.href='../logout.php'" class="btn btn-danger">
+                                Cerrar sesión
+                            </button>
                     </div>
                 </div>
             </div>
