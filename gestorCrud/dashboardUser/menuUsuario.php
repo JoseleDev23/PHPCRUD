@@ -58,7 +58,7 @@ include "header.php";
                         <a href="menuPrincipalUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
                     </div>
                     <div class="text-end">
-                        <form action="logout.php" method="post">
+                        <form action="../logout.php" method="post">
                             <button type="submit" class="btn btn-sm btn-danger">Cerrar Sesión</button>
                     </div>
                 </div>

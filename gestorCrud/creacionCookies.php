@@ -23,8 +23,8 @@
 			echo '</form>';
 		} else {
 			echo "<p>La cookie ya fue creada.</p>";
-			echo '<form action="../gestorCrud/menu.php" method="post">';
-			echo '<input type="submit" class="btn btn-primary" name="continuarConElMenu" value="Cookies Creadas">';
+			echo '<form action="index.php" method="post">';
+			echo '<input type="submit" class="btn btn-primary" name="continuarConElMenu" value="Continuar con el Login">';
 			echo '</form>';
 		}
 		// if (isset($_COOKIE['created_cookie'])) {
