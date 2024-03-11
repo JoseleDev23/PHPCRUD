@@ -7,7 +7,7 @@ include "header.php";
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header display-6">
                     Gestión de usuarios
                 </div>
@@ -47,7 +47,13 @@ include "header.php";
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="../menuPrincipalAdmin.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 text-center">
+                            <button type="button" onclick="window.location.href='../menuPrincipalAdmin.php'" class="btn btn-secondary mt-3">
+                                Volver atrás
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

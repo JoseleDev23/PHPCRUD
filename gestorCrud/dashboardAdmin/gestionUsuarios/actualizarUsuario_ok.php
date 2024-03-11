@@ -11,7 +11,9 @@ include "header.php";
                     Usuario actualizado con éxito
                 </div>
             </div>
-            <a href="menuGestionUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+            <button type="button" onclick="window.location.href='menuGestionUser.php'" class="btn btn-secondary mt-3">
+                Volver al menú
+            </button>
         </div>
     </div>
 </div>
