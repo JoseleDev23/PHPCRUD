@@ -4,12 +4,18 @@ include "header.php";
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col text-center">
-            <div class="card">
+        <div class="card shadow">
                 <div class="card-header display-6">
                     Usuario eliminado con éxito
                 </div>
             </div>
-            <a href="menuGestionUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+            <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <button type="button" onclick="window.location.href='menuGestionUser.php'" class="btn btn-secondary mt-3">
+                            Volver al menú
+                        </button>
+                    </div>
+                </div>
         </div>
     </div>
 </div>
