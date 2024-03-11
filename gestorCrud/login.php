@@ -39,3 +39,4 @@ if (isset($_POST['inputUsuario'])) {
         }
     }
 }
+include "index.php";

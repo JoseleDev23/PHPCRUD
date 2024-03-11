@@ -8,7 +8,26 @@ if (isset($_POST['aceptarCookies'])) {
         setcookie('created_cookie', 1, $expiration);
     }
 
-    // Redirige al usuario al index.php
-    header('Location: index.php');
-    exit();
+    // Procesar la distinción y redirigir al panel correspondiente
+    session_start();
+    include "conexion.php";
+
+    $usuario = $_SESSION['usuario'];
+    mysqli_select_db($conexion, "bibliotecaphp");
+    $query = "SELECT rol FROM usuarios WHERE nombre = '$usuario'";
+    $result = mysqli_query($conexion, $query);
+
+    if ($result) {
+        $usuarioData = mysqli_fetch_assoc($result);
+        $_SESSION['usuarioData'] = $usuarioData;
+
+        if ($usuarioData['rol'] == 'admin') {
+            header('Location: dashboardAdmin/menuPrincipalAdmin.php');
+        } else {
+            header('Location: dashboardUser/menuPrincipalUser.php');
+        }
+        exit();
+    } else {
+        $error = "Error en la consulta: " . mysqli_error($conexion);
+    }
 }

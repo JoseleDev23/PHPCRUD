@@ -54,7 +54,7 @@ include "header.php";
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="menuPrincipalAdmin.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>    
+                        <a href="../menuPrincipalAdmin.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
                     </div>
                 </div>
             </div>
