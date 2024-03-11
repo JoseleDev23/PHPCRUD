@@ -56,7 +56,7 @@ include "header.php";
 
                     </div>
                 </div>
-                <a href="menuPrincipalUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                <a href="menuUsuario.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
             </div>
         </div>
     </div>
