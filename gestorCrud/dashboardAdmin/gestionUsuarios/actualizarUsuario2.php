@@ -22,7 +22,7 @@ $registro = mysqli_fetch_row($registros);
             </div>
             <div class="row mt-3 justify-content-md-center">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">
                             Ingresar datos
                         </div>
@@ -31,31 +31,31 @@ $registro = mysqli_fetch_row($registros);
                                 <input type="hidden" name="id" value="<?php echo $registro[0] ?>">
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Nombre</label>
+                                <label for="" class="form-label fw-bold">Nombre</label>
                                 <input type="text" class="form-control" name="nombre" id="nombre" value="<?php echo $registro[1] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Correo electrónico</label>
+                                <label for="" class="form-label fw-bold">Correo electrónico</label>
                                 <input type="email" class="form-control" name="correo" id="correo" value="<?php echo $registro[2] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Contraseña</label>
+                                <label for="" class="form-label fw-bold">Contraseña</label>
                                 <input type="password" class="form-control" name="pass" id="pass" value="<?php echo $registro[3] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">DNI</label>
+                                <label for="" class="form-label fw-bold">DNI</label>
                                 <input type="text" class="form-control" name="dni" id="dni" value="<?php echo $registro[4] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Edad</label>
+                                <label for="" class="form-label fw-bold">Edad</label>
                                 <input type="number" class="form-control" name="edad" id="edad" value="<?php echo $registro[5] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Dirección</label>
+                                <label for="" class="form-label fw-bold">Dirección</label>
                                 <input type="text" class="form-control" name="direccion" id="direccion" value="<?php echo $registro[6] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="rol" class="form-label">Rol</label>
+                                <label for="rol" class="form-label fw-bold">Rol</label>
                                 <select class="form-control" name="rol" id="rol">
                                     <option value="admin" <?php echo ($registro[7] == 'admin') ? 'selected' : ''; ?>>Admin</option>
                                     <option value="usuario" <?php echo ($registro[7] == 'usuario') ? 'selected' : ''; ?>>Usuario</option>

@@ -8,7 +8,7 @@ include "header.php";
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header display-6">
                     Eliminar usuario
                 </div>

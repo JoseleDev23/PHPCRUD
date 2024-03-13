@@ -3,19 +3,22 @@
 include "../conexion.php";
 include "header.php";
 
+if (!isset($_SESSION)) {
+    session_start();
+}
 ?>
 
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header display-6">
-                    Prestamo de libros
+                    <p class="text-secondary fs-9 pt-2">¡Le damos la bienvenida, <?php echo $_SESSION['usuario']; ?>!</p>
                 </div>
             </div>
             <div class="row mt-3 justify-content-md-center">
                 <div class="col-md-10">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">
                             Libros
                         </div>

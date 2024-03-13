@@ -5,7 +5,7 @@ if (!isset($_SESSION)) {
 }
 
 if (!isset($_SESSION['usuario'])) {
-    die("Error - debe <a href='index.php'>identificarse</a>.");
+    die("Error - debe <a href='../index.php'>identificarse</a>.");
 }
 
 include "header.php";
@@ -44,8 +44,8 @@ include "header.php";
                             </tbody>
                         </table>
                         <button type="button" onclick="window.location.href='../logout.php'" class="btn btn-danger">
-                                Cerrar sesión
-                            </button>
+                            Cerrar sesión
+                        </button>
                     </div>
                 </div>
             </div>

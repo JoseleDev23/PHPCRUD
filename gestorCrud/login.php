@@ -28,7 +28,7 @@ if (isset($_POST['inputUsuario'])) {
                 if ($usuarioData['rol'] == 'admin') {
                     header("Location: dashboardAdmin/menuPrincipalAdmin.php");
                 } else {
-                    header("Location: dashboardUser/menuPrincipalUser.php");
+                    header("Location: dashboardUser/menuUsuario.php");
                 }
                 exit();
             } else {
