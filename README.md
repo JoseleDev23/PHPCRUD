@@ -1,6 +1,7 @@
 # PHPCRUD
 
 Proyecto Final Entorno Servidor
+
 Libros para pruebas:
 INSERT INTO libros (titulo, autor, genero, anio_publicacion, disponibilidad) VALUES
 ('El Hobbit', 'J.R.R. Tolkien', 'Fantasía', 1937, 'Disponible'),
