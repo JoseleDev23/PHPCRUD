@@ -6,8 +6,7 @@ if (!isset($_SESSION)) {
 }
 
 if (!isset($_SESSION['usuario'])) {
-    die("Error - debe <a href='index.php'>identificarse</a>.
-");
+    die("Error - debe <a href='../index.php'>identificarse</a>.");
 }
 ?>
 
@@ -15,21 +14,12 @@ if (!isset($_SESSION['usuario'])) {
 include "header.php";
 ?>
 
-<div class="container">
-    <div class="row mb-3">
-        <div class="col-12 text-start pb-2">
-            <p class="text-secondary fs-6">Usuario: <?php echo $_SESSION['usuario']; ?></p>
-        </div>
-    </div>
-</div>
-
-
 <div class="container my-5">
     <div class="row">
         <div class="col text-center">
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header display-6">
-                    Gestión de libros
+                    <p class="text-secondary fs-9 pt-2">¡Le damos la bienvenida, <?php echo $_SESSION['usuario']; ?>!</p>
                 </div>
                 <div class="p-4">
                     <div class="table-responsive">
@@ -37,7 +27,7 @@ include "header.php";
                             <thead>
                                 <tr>
                                     <th scope="col">Pedir préstamo</th>
-                                    <th scope="col">Listado de libros disponibles</th>
+                                    <th scope="col">Listado de libros</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -55,7 +45,9 @@ include "header.php";
                                 </tr>
                             </tbody>
                         </table>
-                        <a href="menuPrincipalUser.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                        <button type="button" onclick="window.location.href='../logout.php'" class="btn btn-danger">
+                            Cerrar sesión
+                        </button>
                     </div>
                 </div>
             </div>

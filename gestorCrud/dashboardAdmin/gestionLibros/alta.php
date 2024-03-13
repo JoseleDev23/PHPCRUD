@@ -20,22 +20,22 @@ include "header.php";
                         </div>
                         <form class="p-4" method="POST" action="registrar.php" enctype="multipart/form-data">
                             <div class="mb-3">
-                                <label for="" class="form-label">Título</label>
+                                <label for="" class="form-label fw-bold">Título</label>
                                 <input type="text" class="form-control" name="titulo" id="titulo" required />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Autor</label>
+                                <label for="" class="form-label fw-bold">Autor</label>
                                 <input type="text" class="form-control" name="autor" id="autor" required />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Género</label>
+                                <label for="" class="form-label fw-bold">Género</label>
                                 <input type="text" class="form-control" name="genero" id="genero" required />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Año de publicación</label>
+                                <label for="" class="form-label fw-bold">Año de publicación</label>
                                 <input type="number" class="form-control" name="anno" id="anno" required />
                             </div>
-                            <input type="hidden" name="disponibilidad" id="disponibilidad" value="disponible">
+                            <input type="hidden" name="disponibilidad fw-bold" id="disponibilidad" value="disponible">
                             <button type="submit" class="btn btn-primary">
                                 Añadir
                             </button>

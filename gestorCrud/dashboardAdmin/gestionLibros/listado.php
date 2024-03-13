@@ -13,7 +13,7 @@ include "header.php";
             </div>
             <div class="row mt-3 justify-content-md-center">
                 <div class="col-md-10">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-header">
                             Libros
                         </div>

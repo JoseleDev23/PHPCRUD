@@ -7,7 +7,7 @@ include "header.php";
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header display-6">
                     Añadir usuario
                 </div>
@@ -21,43 +21,31 @@ include "header.php";
                         <form role="form" action='registrar.php' method='post'>
                             <div class="form-group">
                                 <legend>Registro de Usuario</legend>
-                                <label for="nombre">
-                                    Nombre:
-                                </label>
+                                <label for="nombre" class="form-label fw-bold">Nombre:</label>
                                 <input type='text' name='nombre' id='nombre' required />
                             </div>
-                            <div class="form-group">
-                                <label for="email">
-                                    Correo Electrónico:
-                                </label>
+                            <div class="form-group fw-bold">
+                                <label for="email" class="form-label fw-bold">Correo Electrónico:</label>
                                 <input type='email' name='email' id='email' required />
                             </div>
                             <div class="form-group">
-                                <label for="password">
-                                    Contraseña:
-                                </label>
+                                <label for="password" class="form-label fw-bold">Contraseña:</label>
                                 <input type='password' name='password' id='password' required />
                             </div>
                             <div class="form-group">
-                                <label for="dni">
-                                    DNI:
-                                </label>
+                                <label for="dni" class="form-label fw-bold">DNI:</label>
                                 <input type='text' name='dni' id='dni'  required />
                             </div>
                             <div class="form-group">
-                                <label for="edad">
-                                    Edad:
-                                </label>
+                                <label for="edad" class="form-label fw-bold">Edad:</label>
                                 <input type='number' name='edad' id='edad' required />
                             </div>
                             <div class="form-group">
-                                <label for="direccion">
-                                    Dirección:
-                                </label>
+                                <label for="direccion" class="form-label fw-bold">Dirección:</label>
                                 <input type='text' name='direccion' id='direccion' />
                             </div>
                             <div class="form-group">
-                                <label for="rol">Rol:</label>
+                                <label for="rol" class="form-label fw-bold">Rol:</label>
                                 <select name="rol" id="rol" required>
                                     <option value="usuario">Usuario</option>
                                     <option value="administrador">Administrador</option>

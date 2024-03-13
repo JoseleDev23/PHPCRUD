@@ -31,23 +31,23 @@ $registro = mysqli_fetch_row($registros);
                                 <input type="hidden" name="id" value="<?php echo $registro[0] ?>">
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Título</label>
+                                <label for="" class="form-label fw-bold">Título</label>
                                 <input type="text" class="form-control" name="titulo" id="titulo" value="<?php echo $registro[1] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Autor</label>
+                                <label for="" class="form-label fw-bold">Autor</label>
                                 <input type="text" class="form-control" name="autor" id="autor" value="<?php echo $registro[2] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Género</label>
+                                <label for="" class="form-label fw-bold">Género</label>
                                 <input type="text" class="form-control" name="genero" id="genero" value="<?php echo $registro[3] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Año de publicación</label>
+                                <label for="" class="form-label fw-bold">Año de publicación</label>
                                 <input type="number" class="form-control" name="anno" id="anno" value="<?php echo $registro[4] ?>" />
                             </div>
                             <div class="mb-3">
-                                <label for="disponibilidad" class="form-label">Disponibilidad</label>
+                                <label for="disponibilidad" class="form-label fw-bold">Disponibilidad</label>
                                 <select class="form-control" name="disponibilidad" id="disponibilidad">
                                     <option value="disponible" <?php echo ($registro[5] == 'disponible') ? 'selected' : ''; ?>>Disponible</option>
                                     <option value="prestado" <?php echo ($registro[5] == 'prestado') ? 'selected' : ''; ?>>Prestado</option>

@@ -28,11 +28,11 @@
                                         ?>
                                     </span>
                                 </div>
-                                <label for="usuario">Usuario:</label>
+                                <label for="usuario" class="form-label fw-bold">Usuario:</label>
                                 <input type='text' name='inputUsuario' id='usuario' maxlength="50" />
                             </div>
                             <div class="form-group">
-                                <label for="password"> Contraseña: </label>
+                                <label for="password" class="form-label fw-bold"> Contraseña: </label>
                                 <input type='password' name='inputPassword' id='password' maxlength="50" />
                             </div>
                             <button type="submit" name="enviar" class="btn btn-primary">Entrar</button>

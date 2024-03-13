@@ -1,23 +1,22 @@
 <?php
 include "../conexion.php";
 include "header.php";
+if (!isset($_SESSION)) {
+    session_start();
+}
 ?>
 
 <div class="container my-5 ">
     <div class="row">
         <div class="col text-center">
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header display-6">
-                    Listado de libros
+                    <p class="text-secondary fs-9 pt-2">¡Le damos la bienvenida, <?php echo $_SESSION['usuario']; ?>!</p>
                 </div>
             </div>
             <div class="row mt-3 justify-content-md-center">
                 <div class="col-md-10">
-                    <div class="card">
-                        <div class="card-header">
-                            Libros
-                        </div>
-
+                    <div class="card shadow">
                         <?php
                         mysqli_select_db($conexion, "bibliotecaphp");
                         $consultar = "SELECT * FROM libros";
@@ -56,7 +55,13 @@ include "header.php";
 
                     </div>
                 </div>
-                <a href="menuUsuario.php"> <i class="bi-arrow-return-left px-3" style="font-size: 4rem; color:black"></i></a>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <button type="button" onclick="window.location.href='menuUsuario.php'" class="btn btn-secondary mt-3">
+                            Volver atrás
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
