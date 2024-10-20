@@ -63,6 +63,7 @@ Actualización de información personal como nombre, correo electrónico y contr
 Instalación y Configuración ⚙️
 
 Requisitos
+
 Servidor Web compatible con PHP (XAMPP, WAMP, etc.).
 MySQL para la base de datos.
 Navegador Web actualizado.
@@ -72,16 +73,17 @@ Clona este repositorio en tu servidor local:
 bash
 Copiar código
 git clone https://github.com/tu_usuario/don-pin-pon.git
+
 Importa la base de datos:
 
 Entra a phpMyAdmin o tu gestor de bases de datos preferido.
 Crea una base de datos llamada biblioteca_don_pin_pon.
 Importa el archivo biblioteca.sql incluido en el proyecto.
+
 Configura la conexión a la base de datos:
 
 Abre el archivo config.php y ajusta los valores de acuerdo a tu entorno local:
 php
-Copiar código
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -93,11 +95,15 @@ Dirígete a http://localhost/don-pin-pon en tu navegador para ver el sistema fun
 Estructura del Proyecto 🗂️
 
 /css: Archivos de estilos y configuraciones de Bootstrap y personalizados.
-/js: Scripts JavaScript para la interacción del front-end.
+
 /includes: Archivos reutilizables como la conexión a la base de datos y cabeceras.
+
 /admin: Panel de administración y gestión de usuarios y libros.
+
 /user: Dashboard de usuarios regulares.
+
 /config.php: Configuración de la base de datos.
+
 /biblioteca.sql: Archivo SQL para importar la base de datos.
 
 Próximas Mejoras 🚀
