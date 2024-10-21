@@ -71,7 +71,7 @@ Pasos para Instalar
 Clona este repositorio en tu servidor local:
 
 bash
-Copiar código
+
 git clone https://github.com/JoseleDev23/PHPCRUD.git
 
 Importa la base de datos:
